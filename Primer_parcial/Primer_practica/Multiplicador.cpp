@@ -4,6 +4,7 @@
     Rios Altamirano Alam Yael
   Multiplica dos numeros de la entrada
   Ejecutar el programa e ingresar los dos numeros
+  seguidos de enter en consola
 */
 #include <iostream>
 using namespace std;
