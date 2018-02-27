@@ -11,7 +11,7 @@ public class ExpModularLog {
         int res = 1;
         a = a % n;
         while (m > 0){
-            if((m & 1)==1)// Si m es impar, multiplicar a con res
+            if((m & 1)==1)
                 res = (res * a) % n;
             m = m >> 1; // m = m / 2
             a = (a * a) % n;
