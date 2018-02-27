@@ -4,13 +4,10 @@
 #       Rios Altamirano Alam Yael
 # Calcula el minimo comun multiplo de dos numeros
 # utilizando el algoritmo de Euclides
-# Forma de ejecución:
-# Ejecutar el codigo e ingresar un numero,
-# dar enter e ingresar el otro antes del siguiente enter
-
+# Ejecutar el codigo e ingresar los dos numeros
 def mcd(a, b):
-	if a < b: #Identificar al mayor
-		a, b = b, a 
+	if a < b:
+		a, b = b, a
 	while b != 0:
 		r = a % b
 		a, b = b, r

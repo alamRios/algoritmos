@@ -1,7 +1,12 @@
+/*
+  Multiplicador.cpp
+    Medina Juarez Jesus Booz
+    Rios Altamirano Alam Yael
+  Multiplica dos numeros de la entrada
+  Ejecutar el programa e ingresar los dos numeros seguidos de enter
+*/
 #include <iostream>
 using namespace std;
- //Compiler version g++ 6.3.0
-
  int multiply(int x, int y);
  int main()
  {
