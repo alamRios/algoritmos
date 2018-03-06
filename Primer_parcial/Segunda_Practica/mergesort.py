@@ -9,24 +9,32 @@ def mergesort(A):
     if n == 1:
         return A
     Ap = mergesort(A[:n/2])
-    if n%2 != 1:
-        App = mergesort(A[n/2:])
-        return merge(Ap,App)
-    else:
-        App = mergesort(A[n/2:n-1])
-        res = []
-        res.append(A[-1])
-        return merge(merge(Ap,App),res)
+    App = mergesort(A[n/2:])
+    return merge(Ap,App)
 
 def merge(L,R):
     Re = []
-    for i in range(0,len(L)):
+    LRigualTam = 0
+    n = len(L)
+    if(len(R) != len(L)):
+        if len(R) > len(L):
+            LRigualTam = 1
+        else:
+            LRigualTam = 2
+            n = len(R)
+    for i in range(0,n):
         if L[i] < R[i]:
             Re.append(L[i])
             Re.append(R[i])
         else:
             Re.append(R[i])
             Re.append(L[i])
+
+    if LRigualTam == 1:
+        Re += R[n:]
+    elif LRigualTam == 2:
+        Re += L[n:]
+        
     return Re
 
 A = [13,23,1,232,8]
