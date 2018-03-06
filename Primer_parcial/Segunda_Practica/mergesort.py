@@ -1,5 +1,5 @@
 # Python 2.7.13
-# selectionSort.py
+# mergeSort.py
 # Medina Juarez Jesus Booz
 # Rios Altamirano Alam Yael
 # Implementacion de algoritmo merge sort
