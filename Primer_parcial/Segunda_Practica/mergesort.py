@@ -14,28 +14,20 @@ def mergesort(A):
 
 def merge(L,R):
     Re = []
-    LRigualTam = 0
-    n = len(L)
-    if(len(R) != len(L)):
-        if len(R) > len(L):
-            LRigualTam = 1
+    nL = len(L)
+    nR = len(R)
+    while nL > 0 and nR > 0:
+        if L[len(L) - nL] < R[len(R) - nR]:
+            Re.append(L[len(L) - nL])
+            nL -= 1
         else:
-            LRigualTam = 2
-            n = len(R)
-    for i in range(0,n):
-        if L[i] < R[i]:
-            Re.append(L[i])
-            Re.append(R[i])
-        else:
-            Re.append(R[i])
-            Re.append(L[i])
-
-    if LRigualTam == 1:
-        Re += R[n:]
-    elif LRigualTam == 2:
-        Re += L[n:]
-        
+            Re.append(R[len(R) - nR])
+            nR -= 1
+    if nL > 0:
+        Re += L[-nL:]
+    elif nR > 0:
+        Re += R[-nR:]
     return Re
 
-A = [13,23,1,232,8]
+A = [13,23,1,232,8,0,2,134]
 print A,mergesort(A)
