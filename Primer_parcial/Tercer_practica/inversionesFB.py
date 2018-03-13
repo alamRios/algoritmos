@@ -12,5 +12,5 @@ def inversiones(A):
                 indices.append((i,j))
     return indices
 
-A = [2,4,1,3,5]
+A = [2,4,1]
 print 'A:',A,'inversiones:',inversiones(A)
