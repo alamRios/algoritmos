@@ -18,5 +18,5 @@ def eliminaDuplicados(A):
                 
             
 
-A = [1,0,-1,20,1,0,-20,-50,1]
+A = [1,0,1,0,1,1,1,45,23,2,2,1,6]
 print A,eliminaDuplicados(A)

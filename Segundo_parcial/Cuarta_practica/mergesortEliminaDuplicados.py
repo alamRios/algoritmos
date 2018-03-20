@@ -29,5 +29,5 @@ def merge(L,R):
         Re += R
     return Re
 
-A = [1,0,-1,20,1,0,-20,-50]
+A = [1,0,2,1,0,-1,1,2]
 print A,mergesort(A)
