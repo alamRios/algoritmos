@@ -17,4 +17,4 @@ folder/*
 !folder/a/
 folder/a/*
 !folder/a/b1/
-!folder/a/b2/
+!folder/a/b2/a
