@@ -100,9 +100,7 @@ public class Huffman2 {
     public static void main(String[] args) throws IOException {
         System.out.println("Cola de prioridad");
 		Huffman2 conjunto = new Huffman2();
-                System.out.println(conjunto.mapaCaracter);
                 conjunto.mapaCaracter = leerFrecuencias("frecuencias.txt");
-                System.out.println(conjunto.mapaCaracter);
 		Nodo arbolFinal = conjunto.construirArbol();
 
                 conjunto.construirMapadelCodigo(arbolFinal);
